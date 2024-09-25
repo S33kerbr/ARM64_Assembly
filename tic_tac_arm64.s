@@ -21,19 +21,19 @@ total_moves:    .byte   0
 space:          .byte   ' '
 new_line:       .byte   '\n'
 
-welcome_str:     .ascii  "### Tic-Tac-ARM64 ###\nCoordinates:\n\n1 2 3\n4 5 6\n7 8 9\n"
+welcome_str:     .ascii  "### Jogo da velha-ARM64 ###\nCoordinates:\n\n1 2 3\n4 5 6\n7 8 9\n"
 welcome_str_len = . - welcome_str
 
-enter_position_str:     .ascii  "\nMake a move (1-9): "
+enter_position_str:     .ascii  "\nRealize um Movimento(1-9): "
 enter_position_str_len = . - enter_position_str
 
-invalid_str:     .ascii  ">>> Invalid move, try again.\n"
+invalid_str:     .ascii  ">>>Movimento invalido, tente novamente.\n"
 invalid_str_len = . - invalid_str
 
-win_str:     .ascii  "\n>>> Victory by "
+win_str:     .ascii  "\n>>>Vitória de"
 win_str_len = . - win_str
 
-gameover_str:     .ascii  "\n>>> Game over: it's a draw!\n"
+gameover_str:     .ascii  "\n>>>Fim de jogo\n"
 gameover_str_len = . - gameover_str
 
 .text
